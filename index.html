@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="to_do_list">
+<!-- ------------------------------ Date -------------------------------- -->
+
+      <h1>Today</h1>
+      <div class="Date">
+        <span id="day" class="day">Friday</span>
+        <span id="date" class="date">20</span>
+        <span id="month" class="month">November</span>
+      </div>
+
+<!-- ------------------------------ progress bar -------------------------------- -->     
+
+      <div class="progress_bar">
+        <div class="progress"></div>
+      </div>
+      <div class="task">
+        <div class="task_done">0 of</div>
+        <div class="total_task">0 done</div>
+      </div>
+
+<!-- ------------------------------ Progress bar button -------------------------------- -->
+
+      <div class="task_write">
+        <input type="text" placeholder="What needs doing ?" id="userinput" />
+        <div class="task_add">Add task</div>
+      </div>
+
+<!-- ------------------------------ task selecter -------------------------------- -->
+
+      <div class="nave_bar">
+        <div class="all">All</div>
+        <div class="to_do">To do</div>
+        <div class="done">Done</div>
+      </div>
+      <div class="task_list">No tasks yet. Add your first one above.</div>
+
+      <div class="count_area">
+        <div class="task_count">0</div>
+        <div class="task_clear">
+          <div class="task_left">Task left</div>
+          <div class="clear_task">Clear done</div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
