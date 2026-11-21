@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #eef2ee;
+  --grid: #dce3dd;
+  --surface: #ffffff;
+  --ink: #1e2b35;
+  --muted: #62726b;
+  --line: #cbd5ce;
+  --accent: #1f7a6d;
+  --accent-ink: #ffffff;
+  --danger: #b3452f;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: var(--bg);
+  background-image:
+    linear-gradient(var(--grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
+  background-size: 26px 26px;
+}
+
+.to_do_list{
+  height: 100vh;
+  margin-top: 40px;
+}
+
+h1{
+  height: 40px;
+}
+
+.Date{
+  height: 40px;
+}
+
+.progress_bar{
+  height: 15px;
+}
+
+.progress {
+  height: 8px;
+  width: 60.5vh;
+  background-color: var(--line);
+  border-radius: 99px;
+  overflow: hidden;
+}
+
+.task {
+  display: flex;
+  gap: 8px;
+  height: 46px;
+}
+
+.task_write {
+  display: flex;
+  gap: 8px;
+}
+
+.task_add {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  color: #eef2ee;
+  border: 1px lightgreen;
+  height: 6vh;
+  width: 12vh;
+  background-color: #1f7a6d;
+  cursor: pointer;
+}
+
+input {
+  width: 47vh;
+  border-radius: 5px;
+  border-color: transparent;
+}
+
+.nave_bar {
+  display: flex;
+  gap: 8px;
+  height: 60px;
+  align-items: center;
+}
+
+.all {
+  display: flex;
+  height: 30px;
+  width: 50px;
+  color: black;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  border:2px,solid gray;
+  cursor: pointer;
+}
+
+.to_do {
+  display: flex;
+  height: 30px;
+  width: 70px;
+  color: black;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  border:2px,solid gray;
+  cursor: pointer;
+}
+
+.done {
+  display: flex;
+  height: 30px;
+  width: 60px;
+  color: black;
+  align-items: center;
+  justify-content: center;
+  border-radius: 40px;
+  border:2px,solid gray;
+  cursor: pointer;
+}
+
+.task_list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border:
+    2px solid,
+    black;
+  height: 11vh;
+  width: 60.2vh;
+  border-radius: 10px;
+  color: gray;
+}
+
+.count_area{
+  display: flex;
+  color: gray;
+  height: 50px;
+}
+
+.task_clear{
+  display: flex;
+  gap: 42vh;
+}
