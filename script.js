@@ -1,12 +1,13 @@
 const allbtn = document.querySelector(".all");
 const todobtn = document.querySelector(".to_do");
 const donebtn = document.querySelector(".done");
-const user = document.querySelector("#userinput");
-const submit = document.querySelector(".task_add")
+const submit = document.querySelector(".task_add");
+const taskBox = document.querySelector(".task_list");
 
-submit.addEventListener("click",() => {
+submit.addEventListener("click", () => {
   const input = document.getElementById("userinput");
-  console.log(input.value);
+  taskBox.textContent = input.value;
+  input.value = "";
 });
 
 // ------------------------------- All button -------------------------------------
