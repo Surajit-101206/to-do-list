@@ -4,10 +4,20 @@ const donebtn = document.querySelector(".done");
 const submit = document.querySelector(".task_add");
 const taskBox = document.querySelector(".task_list");
 
+const checkbox = document.createElement("input");
+checkbox.type = "checkbox";
+checkbox.id = "my-checkbox";
+checkbox.style.height = "24px";
+checkbox.style.width = "24px";
+checkbox.style.cursor = "pointer";
+
+document.body.appendChild(checkbox);
+
 submit.addEventListener("click", () => {
-  const input = document.getElementById("userinput");
-  taskBox.textContent = input.value;
-  input.value = "";
+  const userinput = document.querySelector("#user");
+  taskBox.textContent = userinput.value;
+  userinput.value = "";
+  taskBox.style.color = "black";
 });
 
 // ------------------------------- All button -------------------------------------
