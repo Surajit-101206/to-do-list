@@ -26,20 +26,20 @@ body {
   background-size: 26px 26px;
 }
 
-.to_do_list{
+.to_do_list {
   height: 100vh;
   margin-top: 40px;
 }
 
-h1{
+h1 {
   height: 40px;
 }
 
-.Date{
+.Date {
   height: 40px;
 }
 
-.progress_bar{
+.progress_bar {
   height: 15px;
 }
 
@@ -96,7 +96,9 @@ input {
   align-items: center;
   justify-content: center;
   border-radius: 40px;
-  border:2px,solid gray;
+  border:
+    2px,
+    solid gray;
   cursor: pointer;
 }
 
@@ -108,7 +110,9 @@ input {
   align-items: center;
   justify-content: center;
   border-radius: 40px;
-  border:2px,solid gray;
+  border:
+    2px,
+    solid gray;
   cursor: pointer;
 }
 
@@ -120,31 +124,35 @@ input {
   align-items: center;
   justify-content: center;
   border-radius: 40px;
-  border:2px,solid gray;
+  border:
+    2px,
+    solid gray;
   cursor: pointer;
 }
 
 .task_list {
   display: flex;
+  flex-direction: column;
+  gap: 8px;
   align-items: center;
   justify-content: center;
   background-color: #ffffff;
   border:
     2px solid,
     black;
-  height: 11vh;
+  min-height: 11vh;
   width: 60.2vh;
   border-radius: 10px;
   color: gray;
 }
 
-.count_area{
+.count_area {
   display: flex;
   color: gray;
   height: 50px;
 }
 
-.task_clear{
+.task_clear {
   display: flex;
   gap: 42vh;
 }
