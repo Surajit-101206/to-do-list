@@ -78,6 +78,7 @@ h1 {
 input {
   width: 47vh;
   border-radius: 5px;
+  padding-left: 30px;
   border-color: transparent;
 }
 
@@ -92,63 +93,45 @@ input {
   display: flex;
   height: 30px;
   width: 50px;
-  color: black;
+  color: transparent;
   align-items: center;
   justify-content: center;
   border-radius: 40px;
-  border:
-    2px,
-    solid gray;
-  cursor: pointer;
 }
 
 .to_do {
   display: flex;
   height: 30px;
   width: 70px;
-  color: black;
+  color: transparent;
   align-items: center;
   justify-content: center;
   border-radius: 40px;
-  border:
-    2px,
-    solid gray;
-  cursor: pointer;
 }
 
 .done {
   display: flex;
   height: 30px;
   width: 60px;
-  color: black;
+  color: transparent;
   align-items: center;
   justify-content: center;
   border-radius: 40px;
-  border:
-    2px,
-    solid gray;
-  cursor: pointer;
 }
 
 .task_list {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  align-items: center;
-  justify-content: center;
-  background-color: #ffffff;
-  border:
-    2px solid,
-    black;
-  min-height: 11vh;
-  width: 60.2vh;
-  border-radius: 10px;
-  color: gray;
+      min-height: 0px;
+      border-radius: 10px;
+      padding: 10px;
+      display: flex;
+      padding-left: 7vh;
+      flex-direction: column; 
+      gap: 8px;      
 }
 
 .count_area {
   display: flex;
-  color: gray;
+  color: transparent;
   height: 50px;
 }
 
