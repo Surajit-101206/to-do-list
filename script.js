@@ -1,16 +1,16 @@
+const now = new Date();
+
+document.getElementById("day").textContent = now.toLocaleDateString("en-US", {
+  weekday: "long",
+});
+document.getElementById("date").textContent = now.getDate();
+document.getElementById("month").textContent = now.toLocaleDateString("en-US", {
+  month: "long",
+});
+
 const submit = document.querySelector(".task_add");
 const taskBox = document.querySelector(".task_list");
-const main = document.querySelector(".task_list");
 const taskCount = document.querySelector(".count_area");
-
-//====================================== check box ======================================
-
-const checkbox = document.createElement("input");
-checkbox.type = "checkbox";
-checkbox.id = "my-checkbox";
-checkbox.style.height = "24px";
-checkbox.style.width = "24px";
-checkbox.style.cursor = "pointer";
 
 // ================================== empty div ==============================================
 
@@ -18,7 +18,7 @@ const emtybox = document.createElement("div");
 emtybox.className = "Empty";
 emtybox.textContent = "No tasks yet. Add your first one above.";
 emtybox.style.height = "11vh";
-emtybox.style.width = "60.2vh";
+emtybox.style.width = "50vh";
 emtybox.style.border = "2px solid, black";
 emtybox.style.borderRadius = "10px";
 emtybox.style.backgroundColor = "#ffffff";
@@ -26,8 +26,17 @@ emtybox.style.color = "gray";
 emtybox.style.display = "flex";
 emtybox.style.justifyContent = "center";
 emtybox.style.alignItems = "center";
+emtybox.style.cursor = " default";
 
-main.prepend(emtybox);
+taskBox.prepend(emtybox);
+
+//====================================== task list box ===================================
+
+function List() {
+  taskBox.style.minHeight = "3px";
+  taskBox.style.backgroundColor = "white";
+  taskBox.style.border = "2px, solid black";
+}
 
 //====================================== task submit button ========================================
 
@@ -40,7 +49,21 @@ function addText() {
   if (value !== "") {
     const newItem = document.createElement("div");
     newItem.className = "item";
-    newItem.textContent = value;
+    newItem.style.display = "flex";
+    newItem.style.alignItems = "center";
+    newItem.style.gap = "10px";
+
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.style.height = "24px";
+    checkbox.style.width = "24px";
+    checkbox.style.padding = "0";
+    checkbox.style.cursor = "pointer";
+
+    const text = document.createElement("span");
+    text.textContent = value;
+
+    newItem.append(checkbox, text);
 
     taskBox.appendChild(newItem); // Adds item to the box
     input.value = ""; // Clears input for next entry
@@ -66,6 +89,7 @@ function addText() {
 }
 
 submit.addEventListener("click", () => {
+  List();
   addText();
   emtybox.remove();
 });

@@ -97,6 +97,7 @@ input {
   align-items: center;
   justify-content: center;
   border-radius: 40px;
+  cursor: default;
 }
 
 .to_do {
@@ -107,6 +108,7 @@ input {
   align-items: center;
   justify-content: center;
   border-radius: 40px;
+  cursor: default;
 }
 
 .done {
@@ -117,22 +119,24 @@ input {
   align-items: center;
   justify-content: center;
   border-radius: 40px;
+  cursor: default;
 }
 
 .task_list {
-      min-height: 0px;
-      border-radius: 10px;
-      padding: 10px;
-      display: flex;
-      padding-left: 7vh;
-      flex-direction: column; 
-      gap: 8px;      
+  min-height: 0px;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  padding-left: 3vh;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .count_area {
   display: flex;
   color: transparent;
   height: 50px;
+  cursor: default;
 }
 
 .task_clear {
