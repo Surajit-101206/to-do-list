@@ -63,6 +63,10 @@ function addText() {
     const text = document.createElement("span");
     text.textContent = value;
 
+    checkbox.addEventListener("change", () => {
+      text.style.textDecoration = checkbox.checked ? "line-through" : "none";
+    });
+
     newItem.append(checkbox, text);
 
     taskBox.appendChild(newItem); // Adds item to the box
